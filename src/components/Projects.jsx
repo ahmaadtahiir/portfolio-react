@@ -3,12 +3,13 @@ import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 // Projects Banners
+import nexuspro from '../assets/images/nexuspro.PNG'
 import project1 from '../assets/images/project1.jpeg'
 import project2 from '../assets/images/project2.png'
 
 const Projects = () => {
     const projectInfo = [
-        { id: 1, image: project1, title: 'Project 1', descripition: 'decription of project 1', demoLink: 'Demo', gitLink: 'Github' },
+        { id: 1, image: nexuspro, title: 'NexusPro', descripition: 'decription of project 1', demoLink: 'https://www.nexuspro.pk/', gitLink: 'Github' },
         { id: 2, image: project2, title: 'Project 2', descripition: 'decription of project 2', demoLink: 'Demo', gitLink: 'Github' },
         { id: 3, image: project1, title: 'Project 3', descripition: 'decription of project 3', demoLink: 'Demo', gitLink: 'Github' },
         { id: 4, image: project2, title: 'Project 4', descripition: 'decription of project 4', demoLink: 'Demo', gitLink: 'Github' },

@@ -25,7 +25,7 @@ const Contact = () => {
         { id: 3, avatar: LocalPhoneOutlinedIcon, title: 'Phone', detail: '+92 343 638 4441' },
         { id: 4, avatar: AttachmentOutlinedIcon, title: 'LinkedIn', detail: 'linkedin.com/in/ahmaadtahiir' },
     ]
-    {/*FUNTIONALITY TO SEND FORM DETAILS */}
+    {/*FUNTIONALITY TO SEND FORM DETAILS */ }
     const sendEmail = (e) => {
         e.preventDefault()
         emailjs.sendForm('service_7hftkxc', 'template_nordhna', form.current, 'j1LahpVUZUFXda2x2')
@@ -38,66 +38,6 @@ const Contact = () => {
             })
     }
     return (
-        // <div className="bg-gray-200 px-40 py-10" id="contact">
-        //     <Grid container spacing={2}>
-        //         <Grid item md={6} sx={12}>
-        //             <span className="flex justify-center text-gray-700 text-3xl font-semibold font-Advent pt-10 mr-20">Contact Information</span>
-        //             <div className="mr-20 mt-10 rounded-lg shadow-md">
-        //                 <List
-        //                     sx={{
-        //                         width: '100%',
-        //                         padding: '20px',
-        //                         bgcolor: 'background.gray',
-        //                         borderStyle: 'solid',
-        //                         borderWidth: '1px',
-        //                         borderColor: '#374151',
-        //                         borderRadius: '10px',
-        //                     }}
-        //                 >
-        //                     {
-        //                         contactInfo.map((contact) => (
-        //                             <ListItem>
-        //                                 <ListItemAvatar>
-        //                                     <Avatar sx={{ bgcolor: '#374151' }}>
-        //                                         <contact.avatar />
-        //                                     </Avatar>
-        //                                 </ListItemAvatar>
-        //                                 <ListItemText
-        //                                     sx={{ color: '#374151' }}
-        //                                     primary={contact.title}
-        //                                     secondary={contact.detail}
-        //                                 />
-        //                             </ListItem>
-        //                         ))
-        //                     }
-        //                 </List>
-        //             </div>
-        //         </Grid>
-        //         <Grid item md={6} sx={12}>
-        //             <span className="flex justify-center text-gray-700 text-3xl font-semibold font-Advent pt-10 ml-20">Write me your project</span>
-        //             <form className="ml-20 mt-10" ref={form} onSubmit={sendEmail}>
-        //                 <label className="block mb-2 text-xl font-Economica text-gray-500">Name</label>
-        //                 <input className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-0 shadow-md" type="text" name="user_name" />
-        //                 <label className="block mb-2 text-xl font-Economica text-gray-500 mt-1">Email</label>
-        //                 <input className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-0 shadow-md" type="email" name="user_email" />
-        //                 <label className="block mb-2 text-xl font-Economica text-gray-500 mt-1">Project</label>
-        //                 <textarea className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-0 shadow-md" type="text" name="user_message" rows="6" />
-        //                 <button onClick={sendEmail} className="flex px-10 py-3 mt-4 text-xl font-Economica font-semibold text-center text-white font-family:cursive bg-gray-700 rounded-lg hover:bg-gray-600" type="submit">Send message  &nbsp;
-        //                     <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" strokeWidth="1.5" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-        //                         <path opacity="0.15" d="M20 4L3 11L10 14L13 21L20 4Z" fill="none" />
-        //                         <path d="M20 4L3 11L10 14M20 4L13 21L10 14M20 4L10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        //                     </svg>
-        //                 </button>
-        //             </form>
-        //         </Grid>
-        //     </Grid>
-        //     <Toaster
-        //         position='top-center'
-        //         toastOptions={{
-        //             duration: 2000,
-        //         }}
-        //         reverseOrder={true} />
-        // </div>
         <div name="contact" className="w-full h-screen bg-gray-200">
             <div className="max-w-screen-lg h-full mx-auto flex flex-col justify-center items-center px-4 pt-10 md:flex-row sm:pt-0">
                 <div className="h-full w-full flex flex-col justify-center sm:w-1/2">
@@ -142,11 +82,11 @@ const Contact = () => {
                     {/* FORM */}
                     <form className="mt-0 sm:mt-8" ref={form} onSubmit={sendEmail}>
                         <label className="flex justify-start text-lg font-Economica text-gray-500 sm:text-xl">Name</label>
-                        <input className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2 focus:outline-0 shadow-md" type="text" name="user_name" required/>
+                        <input className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2 focus:outline-0 shadow-md" type="text" name="user_name" required />
                         <label className="flex justify-start text-lg font-Economica text-gray-500 mt-1 sm:text-xl">Email</label>
-                        <input className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2 focus:outline-0 shadow-md" type="email" name="user_email" required/>
+                        <input className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2 focus:outline-0 shadow-md" type="email" name="user_email" required />
                         <label className="flex justify-start text-lg font-Economica text-gray-500 mt-1 sm:text-xl">Project</label>
-                        <textarea className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2 focus:outline-0 shadow-md" type="text" name="user_message" rows="4" required/>
+                        <textarea className="bg-gray-200 border border-gray-500 text-gray-900 text-sm rounded-lg block w-full p-2 focus:outline-0 shadow-md" type="text" name="user_message" rows="4" required />
                         <button onClick={sendEmail} className="flex px-5 py-2 mt-2 text-md font-Economica text-center text-white font-family:cursive bg-gray-700 rounded-lg hover:bg-gray-600 sm:text-xl sm:px-10 sm:mt-4" type="submit">Send message  &nbsp;
                             <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth="1.5" stroke="#E5E7EB" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.15" d="M20 4L3 11L10 14L13 21L20 4Z" fill="none" />
